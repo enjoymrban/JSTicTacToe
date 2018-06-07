@@ -5,18 +5,20 @@ let playercolors = {
 }
 let playState = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
 let winner = 0;
+
 $(document).ready(function(){
-    let colWidth = $(".FieldColum").width();
-    $(".FieldRow").height(colWidth);
-    $(".FieldColum").height(colWidth);
+     let colWidth = $(".FieldColum").width();
+     $(".FieldRow").height(colWidth);
+     $(".FieldColum").height(colWidth);
+    
 })
 
 
-window.onresize = function(event) {
-    let colWidth = $(".FieldColum").width();
-    $(".FieldRow").height(colWidth);
-    $(".FieldColum").height(colWidth);
-}
+// window.onresize = function(event) {
+//     let colWidth = $(".FieldColum").width();
+//     $(".FieldRow").height(colWidth);
+//     $(".FieldColum").height(colWidth);
+// }
 
 function selectPlayer(player) {
     nextPlayer = player
@@ -77,8 +79,9 @@ function nextPlayerHover(x, number) {
 
 function chooseField(x, row, column) {
 let ready = (checkField() || winner != 0);
-
+    
     if (ready) {
+       
         
     } else {
 
