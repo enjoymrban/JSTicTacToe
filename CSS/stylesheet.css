@@ -6,13 +6,18 @@ html {
 
 
 .TicTacToe {
-width: 80%;
+width: 50%;
 margin: auto;
 }
 
 .Intro, .Controls{
     margin: auto;
 
+}
+
+.Intro p{
+    font-size: 20px;
+    text-align: center;
 }
 
 
