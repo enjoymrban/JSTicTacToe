@@ -35,10 +35,14 @@ html {
 }
 .Controls button {
     margin: 10px;
-    border-radius: 50%;
+    border-radius: 14px;
     padding: 10px;
     font-size: 20px;
 }
+.Controls button:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+  }
 
 
 .GameField{
