@@ -1,0 +1,52 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="discription" content="TicTacToe a Javascript game!">
+    <meta name="author" content="Silvan Knecht">
+    <title>TicTacTo</title>
+
+    <link rel="stylesheet" href="/CSS/stylesheet.css">
+</head>
+
+<body>
+
+    <section class="TicTacToe">
+        <div class="Intro">
+            <p id="test">Have fun with
+                <span>TicTacToe</span>
+            </p>
+        </div>
+        <div class="GameField">
+            <div class="TopRow FieldRow">
+                <div class="FieldLeft FieldColum" id="field1" onmouseover="nextPlayerHover(this,1)" onmouseout="nextPlayerHover(this,2)" onclick="chooseField(this,0,0)"></div>
+                <div class="FieldMid FieldColum" id="field2" onmouseover="nextPlayerHover(this,1)" onmouseout="nextPlayerHover(this,2)" onclick="chooseField(this,0,1)"></div>
+                <div class="FieldRight FieldColum" id="field3" onmouseover="nextPlayerHover(this,1)" onmouseout="nextPlayerHover(this,2)" onclick="chooseField(this,0,2)"></div>
+            </div>
+            <div class="MidRow FieldRow">
+                <div class="FieldLeft FieldColum" id="field4" onmouseover="nextPlayerHover(this,1)" onmouseout="nextPlayerHover(this,2)" onclick="chooseField(this,1,0)"></div>
+                <div class="FieldMid FieldColum" id="field5" onmouseover="nextPlayerHover(this,1)" onmouseout="nextPlayerHover(this,2)" onclick="chooseField(this,1,1)"></div>
+                <div class="FieldRight FieldColum" id="field6" onmouseover="nextPlayerHover(this,1)" onmouseout="nextPlayerHover(this,2)" onclick="chooseField(this,1,2)"></div>
+            </div>
+            <div class="BottomRow FieldRow">
+                <div class="FieldLeft FieldColum" id="field7" onmouseover="nextPlayerHover(this,1)" onmouseout="nextPlayerHover(this,2)" onclick="chooseField(this,2,0)"></div>
+                <div class="FieldMid FieldColum" id="field8" onmouseover="nextPlayerHover(this,1)" onmouseout="nextPlayerHover(this,2)" onclick="chooseField(this,2,1)"></div>
+                <div class="FieldRight FieldColum" id="field9" onmouseover="nextPlayerHover(this,1)" onmouseout="nextPlayerHover(this,2)" onclick="chooseField(this,2,2)"></div>
+            </div>
+        </div>
+
+        <div class="Controls">
+            <button type="button" id="player1" onclick="selectPlayer(1)">Player 1 starts</button>
+            <button type="button" onclick="newGame()">New Game</button>
+            <button type="button" id="player2" onclick="selectPlayer(2)">Player 2 starts</button>
+        </div>
+    </section>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/JS/javascript.js"></script>
+</body>
+
+</html>
